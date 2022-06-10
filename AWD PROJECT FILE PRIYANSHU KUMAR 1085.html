@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrazyBeats</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+        function showhide() {
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("toggle");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+
+<body>
+    <!-- HOME PAGE CODE BY PRANKUL SINGHAL -->
+    <div id="header">
+        <nav>
+            <div class="logo">
+                <a href="#header" id="hy">CrazyBeats</a>
+
+            </div>
+            <ul>
+                <li><a href="#menu1" id="hy">ORDER</a></li>
+                <li><a href="#about" id="hy">ABOUT</a></li>
+                <li><a href="review.html" id="hy">REVIEW</a></li>
+                <li><a href="#services" id="hy">SERVICES</a></li>
+                <li><a href="#s1" id="hy">CONTACT</a></li>
+                <li><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'"
+                        style="width:auto;">Login</button></li>
+            </ul>
+        </nav>
+
+        <div id="login-form" class="login-page">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" onclick="sign()" class="toggle-btn">Log in</button>
+                    <button type="button" onclick="signup()" class="toggle-btn">Signup</button>
+                </div>
+                <form id="login" class="input-group-login">
+                    <input type="text" class="input-field" placeholder="Email id" required>
+                    <input type="password" class="input-field" placeholder="Enter password" required>
+                    <input type="checkbox" class="check-box"><span>Remember password</span>
+                    <button type="submit" class="submit-btn">Log in</button>
+                </form>
+                <form id="signup" class="input-group-signup">
+                    <input type="text" class="input-field" placeholder="First Name" required>
+                    <input type="text" class="input-field" placeholder="Last Name" required>
+                    <input type="email" class="input-field" placeholder="Write Your Email" required>
+                    <input type="text" class="input-field" placeholder="Enter Your Password" required id="txtPassword">
+                    <input type="password" class="input-field" placeholder="Confirm Password" required
+                        id="txtConfirmPassword">
+                    <input type="checkbox" class="check-box" required><span>I agree to the terms and condition</span>
+
+                    <!-- <button type="submit" class="submit-btn">Signup</button> -->
+
+                    <input type="submit" class="submit-btn" id="btnSubmit" value="Submit" onclick="return Validate() ">
+
+                </form>
+            </div>
+
+        </div>
+        <div class="content">
+            <h1>WELCOME !!</h1>
+            <p style="padding-top: 25px;"> We're not getting younger. Today let's fight hunger!</p>
+
+        </div>
+    </div>
+
+    </div>
+
+</body>
+<script>
+    var x = document.getElementById('login');
+    var y = document.getElementById('signup');
+    var z = document.getElementById('btn');
+    function signup() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+    function sign() {
+        x.style.left = "50pxpx";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    }
+</script>
+<script>
+    var modal = document.getElementById('login-form');
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none"
+        }
+    }
+</script>
+<script type="text/javascript">
+    function Validate() {
+        var password = document.getElementById("txtPassword").value;
+        var confirmPassword = document.getElementById("txtConfirmPassword").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+</script>
+
+</html>
+
+<!-- By Priyanshu -->
+<div class="menu1" id="menu1">
+    <div class="heading1">
+        <h1>CRAZYBEAT'S</h1>
+        <h3>&mdash; MENU &mdash; </h3>
+    </div>
+    <div class="food-items">
+        <img src="burger.jpg">
+        <div class="details">
+            <div class="details-sub">
+                <h5>Smoky Hamburger<h5>
+                        <span class="price1">
+                            <h5 class="price">₹250 </h5>
+                        </span>
+            </div>
+            <p>very tasty and spicy burger made with high qualities of cheese and vegetables,order now and enjoy the
+                taste from the own home.</p>
+            <button><a href="delivery1.html" id="hy">Add To Cart</a></button>
+        </div>
+    </div>
+
+    <div class="food-items">
+        <img src="chicken.jpeg">
+        <div class="details">
+            <div class="details-sub">
+                <h5>Honey Garlic Chicken</h5>
+                <h5 class="price"> ₹650 </h5>
+            </div>
+            <p>very tasty and soft chickens made with very good quality of honey and garlic order now from home.</p>
+            <button><a href="delivery1.html" id="hy">Add To Cart</a></button>
+        </div>
+    </div>
+
+    <div class="food-items">
+        <img src="soup.jpeg">
+        <div class="details">
+            <div class="details-sub">
+                <h5>Manchow Soup</h5>
+                <h5 class="price"> ₹180 </h5>
+            </div>
+            <p>very hot and tasty soup made with very good qualties of vegetables once if you will order this
+                soup,you will love the hot taste.</p>
+            <button><a href="delivery1.html" id="hy">Add To Cart</a></button>
+        </div>
+    </div>
+
+    <div class="food-items">
+        <img src="Spaghetti.jpeg">
+        <div class="details">
+            <div class="details-sub">
+                <h5>Mix Veg Spicy Noodles</h5>
+                <h5 class="price"> ₹220 </h5>
+            </div>
+            <p>very spicy and hot noodles with very high quality of many types of healthy vegetable order now and
+                enjoy the taste</p>
+            <button><a href="delivery1.html" id="hy">Add To Cart</a></button>
+        </div>
+    </div>
+
+    <div class="food-items">
+        <img src="salmon.jpeg">
+        <div class="details">
+            <div class="details-sub">
+                <h5>Roast Fish</h5>
+                <h5 class="price"> ₹160 </h5>
+            </div>
+            <p>fresh and high quality fish roast order now</p>
+            <button><a href="delivery1.html" id="hy">Add To Cart</a></button>
+        </div>
+    </div>
+
+    <div class="food-items">
+        <img src="Sandwich.jpeg">
+        <div class="details">
+            <div class="details-sub">
+                <h5>BBQ Sandwich</h5>
+                <h5 class="price"> ₹350 </h5>
+            </div>
+            <p>very tasty and juicy Sandwich with high qualities of vegetables it is the very special Sandwich in
+                our menu so order now and enjoy.</p>
+            <button><a href="delivery1.html" id="hy">Add To Cart</a></button>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
+
+<!-- Order -->
+
+<section class="menu" id="menu">
+    <div class="heading">
+        <!-- <span>Order</span> -->
+        <h2 style="margin-top: 80px; text-align: center;">CrazyBeat's Top Burgers Of The Week</h2>
+    </div>
+    <!-- 1 -->
+    <div class="menu-container">
+        <div class="box">
+            <div class="box-img">
+                <img src="food2.jpeg" alt="">
+            </div>
+            <h2>Stand Burger</h2>
+            <h3>CrazyBeats</h3>
+            <span>₹79</span>
+        </div>
+        <!-- 2 -->
+        <div class="box">
+            <div class="box-img">
+                <img src="food3.jpeg" alt="">
+            </div>
+            <h2>Burger Crush</h2>
+            <h3>CrazyBeats</h3>
+            <span>₹69</span>
+        </div>
+        <!-- 3 -->
+        <div class="box">
+            <div class="box-img">
+                <img src="food4.jpeg" alt="">
+            </div>
+            <h2>Cheese Burger</h2>
+            <h3>CrazyBeats</h3>
+            <span>₹65</span>
+        </div>
+    </div>
+</section>
+<!-- slide -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<title>Hello, world!</title>
+</head>
+
+<body>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <h3 style="text-align: center; padding-top: 60px;">CRAZYBEAT'S CRAZY FOOD</h3>
+    <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="meal3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="slide">We're hungry for donations</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="meal.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="slide">Enjoy the new Tasty</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Sandwich.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="slide">So Fast So Yummy</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- By Rohan -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="rohann.jpeg" alt="">
+        </div>
+        <div class="about-text">
+            <p class="us">About us</p>
+            <h2>We make delicious and savory food </h2>
+            <p>Crazy beats is a food joint which provides world renowned burgers and nacho fried/sandwiches,croissants
+                etc</p>
+            <a href="aboutt.html" class="btn">LEARN MORE</a>
+        </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="heading">
+            <p class="ser">SERVICES</p>
+            <h2 style="text-align: center;">We provide the best food services in the whole region</h2>
+        </div>
+        <div class="services-container">
+            <!-- 1 -->
+            <div class="s-box">
+                <img src="sevice1.jpg" alt="">
+                <h2>YOUR ORDER</h2>
+                <p>As soon as you placed your order our cooks will be preparing it at thrie earliest</p>
+                <!-- 2 -->
+                <div class="s-box">
+                    <img src='sevice2.jpg' alt="">
+                    <h2>SHIPPING</h2>
+                    <p> Your order will be delivered to you by our delivery man in 30 min </p>
+                </div>
+                <!-- 3 -->
+                <div class="s-box">
+                    <img src='sevice3.jpg' alt="">
+                    <h2>Delivered</h2>
+                    <p> You can live track your order as it is being delivered to you</p>
+                </div>
+            </div>
+    </section>
+
+</body>
+
+
+<!-- CODE BY RISHU -->
+<div class="singh" style="background-color: blanchedalmond;">
+    <div>
+        <p
+            style="color:hsla(36, 96%, 51%, 0.984); margin-left: 300px ; margin-top: 80px; font-size: 20px;padding-top: 10px;">
+            Let's Talk</p>
+        <p id="s1"><a href="connect with us.html" id="hy">Send Message</a></p>
+        <h1 class="c1"><b>connect now</b></h1>
+    </div>
+    <div id="s3">
+        <table>
+            <tr>
+                <th class="s2">CrazyBeats</th>
+                <th class="s2">Menu link</th>
+                <th class="s2">Quick Links</th>
+                <th class="s2">contact</th>
+            </tr>
+            <tr>
+                <td class="s3"><a href="connect with us.html" id="hy">connect with us</a></td>
+                <td class="s3"><a href="#header" id="hy">Home</a></td>
+                <td class="s3"><a href="review.html" id="hy">customer review</a></td>
+                <td class="s3"><img src="saket.jpg" class="l1">Sector 34A Chandigarh </td>
+            </tr>
+            <tr>
+                <td class="s6">
+                    <img src="facebook.png" class="l1">
+                    <img src="parteek1.png" class="l1">
+                    <img src="aradhya1.jpg" class="l1">
+                </td>
+                <td class="s6"><a href="#about" id="hy">About</a></td>
+                <td class="s6"><a href="privacy policy.html" id="hy">privacy policy</a></td>
+                <td class="s6"><img src="anubhav.png" class="l2">+91843567498</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="s6"><a href="#menu1" id="hy">Menu</a></td>
+                <td class="s6"><a href="disc.html" id="hy">Disclaimer</a></td>
+                <td class="s6"><img src="anubhav1.jpg" class="l2">premsingh134@gamil.com</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="s6"><a href="#services" id="hy">services</a></td>
+                <td class="s6"><a href="terms.html" id="hy">Terms Of Use</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="4"></td>
+                <td rowspan="2"></td>
+                <td rowspan="3"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+<div class="we">
+    <h2 class="Cities">Cities We Deliver To:</h2>
+    <div class="container">
+        <table>
+            <tr>
+                <td class="pas">Bengaluru</td>
+                <td class="pas">Jaipur</td>
+                <td class="pas">Chennai</td>
+                <td class="pas"> Ahemdabad</td>
+                <td class="pas">Surat</td>
+                <td class="pas">Varanasi</td>
+
+
+            </tr>
+            <tr>
+                <td class="pas">Hyderabad</td>
+                <td class="pas">Pune</td>
+                <td class="pas">Bhubaneswar</td>
+                <td class="pas">Coimbatore</td>
+                <td class="pas">Patna</td>
+                <td class="pas">Udaipur</td>
+            </tr>
+            <tr>
+                <td class="pas">Delhi</td>
+                <td class="pas">Mumbai</td>
+                <td class="pas">Lucknow</td>
+                <td class="pas">Kochi</td>
+                <td class="pas">Cuttack</td>
+                <td class="pas">Trivandrum</td>
+            </tr>
+            <tr>
+                <td class="pas">Chandigarh</td>
+                <td class="pas">Goa</td>
+                <td class="pas">Mangalore</td>
+                <td class="pas"> Vadodara</td>
+                <td class="pas">Haridwar</td>
+                <td class="pas">Leh</td>
+            </tr>
+            <tr>
+                <td class="pas">Kolkata</td>
+                <td class="pas">Indore</td>
+                <td class="pas">Nashik</td>
+                <td class="pas">Ooty</td>
+                <td class="pas">Pushkar</td>
+                <td class="pas">Rajkot</td>
+            </tr>
+            <tr>
+                <td class="pas">Shimla</td>
+                <td class="pas">Guwahati</td>
+                <td class="pas">Nagpur</td>
+                <td class="pas">Agra</td>
+                <td class="pas">Mysore</td>
+                <td class="pas">Puducherry</td>
+            </tr>
+            <tr>
+                <td class="pas">Jodhpur</td>
+                <td class="pas">Kota</td>
+                <td class="pas">Ajmer</td>
+                <td class="pas">Mussoorie</td>
+                <td class="pas">Rishikesh</td>
+                <td class="pas">Jalandhar</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+<!-- ..... -->
+<!-- MaduraiKozhikodeAlappuzhaThrissurManipalVijayawadaJammuManaliDharamshalaRaipurGorakhpurPalakkad -->
